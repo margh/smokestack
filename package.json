@@ -1,0 +1,20 @@
+{
+  "name": "smokestack",
+  "description": "smokestack.io",
+  "keywords": [
+    ""
+  ],
+  "version": "0.0.0",
+  "author": "Nathan Rashleigh",
+  "contributors": [
+    "Nathan Rashleigh <nrashleigh@smokestack.io>"
+  ],
+  "main": "src/server.coffee",
+  "dependencies": {
+    "express": "~3"
+  },
+  "engines": {
+    "node": "~0.10",
+    "npm": "~1"
+  }
+}
