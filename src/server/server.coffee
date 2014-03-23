@@ -14,6 +14,7 @@ server.listen port, ->
 
 # ## Gets
 server.get '/', (req, res) ->
+  console.log 'got req', req
   res.send """
     <!DOCTYPE html>
     <html>
@@ -30,3 +31,6 @@ server.get '/', (req, res) ->
       <link href="/css/styles.css" type="text/css" rel="stylesheet">
     </html>
   """
+
+server.get '/nathan', (req, res) ->
+  res.send "verily"
