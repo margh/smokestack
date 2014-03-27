@@ -1,6 +1,5 @@
 express = require 'express'
 
-console.log process.cwd()
 port = 40080
 
 server = express();
