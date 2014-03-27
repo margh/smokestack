@@ -1,6 +1,6 @@
 express = require 'express'
 
-port = 40080
+port = 8080
 
 server = express();
 server
