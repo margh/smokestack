@@ -11,7 +11,7 @@ ADD . /smokestack
 RUN cd /smokestack; npm i;
 
 # Append to $PATH variable.
-RUN echo '\n# Node.js\nexport PATH="/smokestack/node_modules/.bin:$PATH"' >> /root/.bash_profile
+RUN export PATH="/smokestack/node_modules/.bin:$PATH
 
 EXPOSE 40080
 CMD ["coffee", "/smokestack/src/server.coffee"]
