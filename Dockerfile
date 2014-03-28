@@ -14,4 +14,4 @@ RUN cd /smokestack; npm i;
 ENV PATH /smokestack/node_modules/.bin:$PATH
 
 EXPOSE 40080
-CMD ["coffee", "/smokestack/src/server.coffee"]
+CMD ["coffee", "/smokestack/src/server/server.coffee"]
