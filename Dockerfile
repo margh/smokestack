@@ -11,8 +11,8 @@ RUN apt-get install -y npm
 ADD . /smokestack
 RUN cd /smokestack; npm i;
 
-# Append to $PATH variable.
-RUN export PATH="/smokestack/node_modules/.bin:$PATH"
+# Load ENV
+RUN source ./env/env.sh
 
 EXPOSE 40080
 CMD ["coffee", "/smokestack/src/server/server.coffee"]
