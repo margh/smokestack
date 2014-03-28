@@ -12,4 +12,4 @@ ADD . /smokestack
 RUN cd /smokestack; npm i;
 
 EXPOSE 40080
-CMD ["./begin.sh"]
+CMD ["/smokestack/begin.sh"]
