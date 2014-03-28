@@ -15,4 +15,4 @@ RUN cd /smokestack; npm i;
 RUN source ./env/env.sh
 
 EXPOSE 40080
-CMD ["coffee", "/smokestack/src/server/server.coffee"]
+CMD ["begin.sh"]
