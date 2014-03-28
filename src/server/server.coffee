@@ -1,3 +1,4 @@
+require 'coffee-script/register'
 express = require 'express'
 
 port = 8080
