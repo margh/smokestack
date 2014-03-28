@@ -11,8 +11,5 @@ RUN apt-get install -y npm
 ADD . /smokestack
 RUN cd /smokestack; npm i;
 
-# Load ENV
-RUN source ./env/env.sh
-
 EXPOSE 40080
 CMD ["begin.sh"]
