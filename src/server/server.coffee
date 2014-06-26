@@ -1,36 +1,29 @@
 require 'coffee-script/register'
 express = require 'express'
+swig = require 'swig'
+
+console.log __dirname
 
 port = process.env.PORT or 40080
 
 server = express();
 server
+  # Could sub this out for an nginx one with better caching.
   .use(express.static "./public/")
+
+  # Swig setup
+  .engine('html', swig.renderFile)
+  .set('view engine', 'html')
+  .set('views', __dirname + '/views')
 
 server.listen port, ->
   console.log 'listening on', port, 'in', server.settings.env
 
-# # Routes
+# ---------------------------------------------------------------------
+# ##
+# Routes
+# ##
 
 # ## Gets
 server.get '/', (req, res) ->
-  console.log 'got req', req
-  res.send """
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <title>smokestack</title>
-      </head>
-      <body>
-        <div id="logo">smokestack</div>
-      </body>
-      <link href="/css/styles.css" type="text/css" rel="stylesheet">
-    </html>
-  """
-
-server.get '/nathan', (req, res) ->
-  res.send "verily"
+  res.render 'index'
