@@ -2,8 +2,6 @@ require 'coffee-script/register'
 express = require 'express'
 swig = require 'swig'
 
-console.log __dirname
-
 port = process.env.PORT or 40080
 
 server = express();
