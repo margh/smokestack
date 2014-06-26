@@ -9,14 +9,16 @@
   "contributors": [
     "Nathan Rashleigh <nrashleigh@smokestack.io>"
   ],
-  "main": "src/server.coffee",
+  "main": "src/server/server.coffee",
   "dependencies": {
-    "express": "~3",
-    "pm2": "~0.7.8",
-    "coffee-script": "*"
+    "express": "^3.0.0",
+    "coffee-script": "^1.7.0"
   },
   "engines": {
     "node": "~0.10",
     "npm": "~1"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/coffee src/server/server.coffee"
   }
 }

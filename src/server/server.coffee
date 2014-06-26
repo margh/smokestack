@@ -5,7 +5,7 @@ port = 8080
 
 server = express();
 server
-  .use(express.static "./public")
+  .use(express.static "./public/")
 
 server.listen port, ->
   console.log 'listening on', port, 'in', server.settings.env
