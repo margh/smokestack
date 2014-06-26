@@ -1,7 +1,7 @@
 require 'coffee-script/register'
 express = require 'express'
 
-port = 80
+port = process.env.PORT or 40080
 
 server = express();
 server
