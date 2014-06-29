@@ -18,5 +18,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.6.0",
+    "parallax": "~2.1.3"
+  }
 }
