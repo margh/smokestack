@@ -31,7 +31,7 @@
     "npm": "~1"
   },
   "scripts": {
-    "prestart": "bower install; grunt;",
+    "prestart": "node_modules/.bin/bower install; node_modules/.bin/grunt;",
     "start": "node_modules/.bin/coffee src/server/server.coffee"
   }
 }
