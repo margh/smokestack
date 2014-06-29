@@ -1,0 +1,22 @@
+{
+  "name": "smokestack",
+  "version": "0.0.0",
+  "homepage": "smokestack.io",
+  "authors": [
+    "Nathan Rashleigh <nrashleigh@smokestack.io>"
+  ],
+  "description": "smokestack.io",
+  "main": "src/server/server.coffee",
+  "keywords": [
+    "smokestack"
+  ],
+  "license": "WTFPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
