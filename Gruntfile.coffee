@@ -21,6 +21,13 @@ module.exports = (grunt) ->
           extensions: '.coffee'
           transform: ['coffeeify']
 
+    watch:
+      browserify:
+        files: ['src/client/**/*.coffee']
+        tasks: ['browserify']
+
   grunt.loadNpmTasks 'grunt-bower-concat'
   grunt.loadNpmTasks 'grunt-browserify'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
+
   grunt.registerTask 'default', ['bower_concat', 'browserify']
