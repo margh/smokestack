@@ -6,7 +6,7 @@ port = process.env.PORT or 40080
 
 server = express();
 server
-  # .use express.compress()
+  .use express.compress()
 
   # Could sub this out for an nginx one with better caching.
   .use express.static "./public/"
