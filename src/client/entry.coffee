@@ -1,3 +1,5 @@
+AppView = require './views/appView.coffee'
+
 $ ->
 
   # fix viewport on orientation change
@@ -11,3 +13,5 @@ $ ->
     frictionY: 0.1
     scalarX: 10
     scalarY: 10
+
+  appView = new AppView

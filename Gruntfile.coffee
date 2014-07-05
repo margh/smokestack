@@ -18,7 +18,6 @@ module.exports = (grunt) ->
         files:
           'public/js/smokestack.js': ['src/client/**/*.coffee']
         options:
-          extensions: '.coffee'
           transform: ['coffeeify']
 
     watch:

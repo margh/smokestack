@@ -14,7 +14,7 @@ body{
 
 /* bigger than the page because it moves */
 /*http://subtlepatterns.com/blach-orchid/*/
-.parallaxBgWrapper {
+#parallaxBgWrapper {
   position: absolute;
   top: -5%;
   left: -5%;
@@ -28,7 +28,7 @@ body{
   height: 100%;
 }
 
-.logoWrapper {
+#logoWrapper {
   position: absolute;
   top: 40%;
   width: 100%;
@@ -42,4 +42,28 @@ body{
   position: absolute;
   top: 45%;
   text-align: center;
+}
+
+/* 
+  translate for 3d acceleration and so it appears
+  above the parallax bg
+*/
+#appView {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  color: #79849e;
+}
+
+.fade {
+  opacity: 1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1
 }
