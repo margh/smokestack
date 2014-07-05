@@ -20,6 +20,12 @@ body{
   top: 0;
 }
 
+.logoWrapper {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
 .logoText {
   font: 64px "LiSong Pro";
   text-align: center;

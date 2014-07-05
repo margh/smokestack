@@ -16,6 +16,8 @@ server
   .set 'view engine', 'html'
   .set 'views', __dirname + '/views'
 
+swig.setDefaults {cache: false}
+
 server.listen port, ->
   console.log 'listening on', port, 'in', server.settings.env
 

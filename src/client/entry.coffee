@@ -9,5 +9,5 @@ $ ->
   $('#parallaxScene').parallax
     frictionX: 0.1
     frictionY: 0.1
-    scalarX: 25
+    scalarX: 10
     scalarY: 10
