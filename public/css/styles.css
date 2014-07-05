@@ -4,20 +4,28 @@ body{
 }
 
 #parallaxScene {
-  background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#1a1a1a;
-    background-size:16px 16px;
-
   position: absolute;
   overflow: hidden;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+}
+
+/* bigger than the page because it moves */
+/*http://subtlepatterns.com/blach-orchid/*/
+.parallaxBgWrapper {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+}
+
+.parallaxBg {
+  background-image: url('../img/blackorchid.png');
+  width: 100%;
+  height: 100%;
 }
 
 .logoWrapper {
@@ -27,11 +35,11 @@ body{
 }
 
 .logoText {
-  font: 64px "LiSong Pro";
-  text-align: center;
   width: 100%;
+  font: 64px "LiSong Pro";
   color: #79849e;
-  text-shadow: -3px 3px 6px #000;
+  text-shadow: -3px 3px 6px #222;
   position: absolute;
   top: 45%;
+  text-align: center;
 }
