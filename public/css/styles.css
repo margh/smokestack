@@ -44,15 +44,7 @@ body{
   text-align: center;
 }
 
-/* 
-  translate for 3d acceleration and so it appears
-  above the parallax bg
-*/
-#appView {
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  color: #79849e;
-}
-
+/*Fade styles for logo*/
 .fade {
   opacity: 1;
     transition: opacity .5s ease-out;
@@ -66,4 +58,44 @@ body{
 
 .fadeIn {
   opacity: 1
+}
+
+
+/* 
+  translate for 3d acceleration and so it appears
+  above the parallax bg.
+
+  flexbox needs heights to be given in vh instead of %
+*/
+#appView {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  color: #79849e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+.app-header {
+  min-height: 100px;
+  top: 0;
+}
+
+.app-footer {
+  text-align: center;
+  min-height: 100px;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+.app-nav {
+  order: 1;
+  flex: 0 0 20vw
+}
+
+.app-main {
+  order: 2;
+  flex: 1;
 }

@@ -1,1 +1,2 @@
-module.exports = -> console.log 'works'
+module.exports = Backbone.View.extend
+  

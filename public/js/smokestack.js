@@ -4,7 +4,7 @@ var AppView;
 AppView = require('./views/appView.coffee');
 
 $(function() {
-  var appView, viewportFix;
+  var viewportFix;
   viewportFix = function() {
     var _ref;
     return (_ref = document.querySelector('meta[name=viewport]')) != null ? _ref.content = "width=" + window.innerWidth + ", height=" + window.innerHeight + ", minimum-scale=1, maximum-scale=1, user-scalable=no" : void 0;
@@ -17,14 +17,14 @@ $(function() {
     scalarX: 10,
     scalarY: 10
   });
-  return appView = new AppView;
+  return $('.app-nav').one('click', function() {
+    return $('#logoWrapper').addClass('fadeOut');
+  });
 });
 
 
 },{"./views/appView.coffee":2}],2:[function(require,module,exports){
-module.exports = function() {
-  return console.log('works');
-};
+module.exports = Backbone.View.extend;
 
 
 },{}]},{},[1,2]);

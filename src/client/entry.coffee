@@ -14,4 +14,7 @@ $ ->
     scalarX: 10
     scalarY: 10
 
-  appView = new AppView
+  $('.app-nav').one 'click', ->
+    $('#logoWrapper').addClass 'fadeOut'
+
+  # appView = new AppView
