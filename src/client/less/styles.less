@@ -1,0 +1,60 @@
+// Squares
+@font-grey: #2a2e35;
+@bg-grey: #ccc;
+@alt-grey: #393d48;
+@highlight: #f2b11c;
+
+body {
+  margin: 0;
+  background: @bg-grey;
+  color: @font-grey;
+  font-family: 'Superclarendon';
+}
+
+a{
+  color: @font-grey;
+  text-decoration: none;
+}
+a:visited {
+  color: @alt-grey;
+}
+
+/*
+  flexbox needs heights to be given in vh instead of %
+*/
+#resume {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  margin: 0 10em;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  order: 1;
+}
+
+.nav {
+  order: 2;
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  a {
+    padding: 0 1.25em 0 0;
+    i {
+      padding-right: 0.1em;
+    }
+  }
+}
+
+.main {
+  padding-top: 2em;
+  order: 3;
+  flex: 1; // fill the space
+}
+
+.footer {
+  order: 4;
+  text-align: center;
+}

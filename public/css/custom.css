@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background: #2a2e35;
+  color: #cccccc;
+  font-family: 'Helvetica';
+}
+a {
+  color: #cccccc;
+}
+a:visited {
+  color: #393d48;
+}
+/*
+  flexbox needs heights to be given in vh instead of %
+*/
+#resume {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  margin: 0 10em;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.header {
+  order: 1;
+  color: #f2b11c;
+}
+.nav {
+  order: 2;
+  display: flex;
+}
+.nav a {
+  padding: 0 1em 0 0;
+}
+.main {
+  order: 3;
+  flex: 1;
+}
+.footer {
+  order: 4;
+  text-align: center;
+}

@@ -9,16 +9,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>smokestack</title>
   </head>
-  <body ng-app="nathan">
-    <div ui-view></div>
+  <body>
+    <div ng-include src="'templates/about'"></div>
+    <div ng-include src="'templates/employment'"></div>
+    <div ng-include src="'templates/projects'"></div>
   </body>
 
   <!-- CSS -->
   <link href="/css/styles.css" type="text/css" rel="stylesheet">
-
-  <!-- JS -->
-  <script src="/js/vendor.js"></script>
-  <script src="/js/templates.js"></script>
-  <script src="/js/smokestack.js"></script>
-
 </html>

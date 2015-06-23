@@ -1,20 +1,38 @@
-AppView = require './views/appView.coffee'
+app = angular.module 'nathan', [
+  'templates-app'
+  'ui.router'
+]
 
-$ ->
+app.config ['$stateProvider', '$urlRouterProvider',
+  ($stateProvider, $urlRouterProvider) ->
 
-  # fix viewport on orientation change
-  viewportFix = ->
-    document.querySelector('meta[name=viewport]')?.content = "width=#{window.innerWidth}, height=#{window.innerHeight}, minimum-scale=1, maximum-scale=1, user-scalable=no"
-  window.onorientationchange = viewportFix
-  viewportFix()
+    $urlRouterProvider.otherwise 'home'
 
-  $('#parallaxScene').parallax
-    frictionX: 0.1
-    frictionY: 0.1
-    scalarX: 10
-    scalarY: 10
+    # Routing
+    $stateProvider
+      .state 'home',
+        url: ''
+        title: 'Smokestack'
+        templateUrl: 'templates/main'
 
-  $('.app-nav').one 'click', ->
-    $('#logoWrapper').addClass 'fadeOut'
+      # you need to route directly to this state because the above states are abstract
+      .state 'home.about',
+        url: '/about'
+        title: 'Smokestack - About Me'
+        templateUrl: 'templates/about'
 
-  # appView = new AppView
+      .state 'home.projects',
+        url: '/projects'
+        title: 'Smokestack - Projects'
+        templateUrl: 'templates/projects'
+
+      .state 'home.employment',
+        url: '/employment'
+        title: 'Smokestack - Employment'
+        templateUrl: 'templates/employment'
+
+      .state 'print',
+        url: '/print'
+        title: 'Smokestack - Employment'
+        templateUrl: 'templates/print'
+  ]
