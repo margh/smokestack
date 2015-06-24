@@ -11,7 +11,7 @@ body {
   font-family: 'Rokkitt', serif;
 }
 
-p, h5 {
+p, h5, h4 {
   margin: 0;
 }
 
@@ -20,11 +20,12 @@ ul {
 }
 
 a {
-  color: @font-grey;
+  color: @alt-grey;
   text-decoration: none;
 }
+
 a:visited {
-  color: @alt-grey;
+  color: @font-grey;
 }
 
 hr {
@@ -76,16 +77,17 @@ hr.bottom {
 .footer {
   order: 4;
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
 }
 
 .item {
   .title {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .detail {
     font-style: italic;
+    font-size: 1.2em;
   }
   .right {
     float: right;
