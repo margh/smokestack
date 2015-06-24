@@ -1,14 +1,3 @@
-
-# Logo turns to smoke on hover
-
-# Rest of page appears
-- Logo top left
-
-- Resume
-  About Me
-  Work
-  Hobbies
-  Projets
-    Seinfeld
-
-- Printable Resume
+* Printable format
+* Turn angular back on and do something fancy
+* Tell bower concat to use minified libs for dist

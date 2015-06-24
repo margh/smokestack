@@ -34,6 +34,7 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "      <i class=\"fa fa-print\"></i>\n" +
     "      <span>Printable</span>\n" +
     "    </a>  -->\n" +
+    "    <!-- I fear nothing. Not even spam. -->\n" +
     "    <a href=\"mailto:nrashleigh@smokestack.io\">\n" +
     "      <i class=\"fa fa-envelope\"></i>\n" +
     "      <span>Email</span>\n" +
@@ -183,7 +184,7 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "  </main>\n" +
     "\n" +
     "  <footer class='footer'>\n" +
-    "    <span>References available on request</span>\n" +
+    "    <span>References available on request. Thank you for viewing.</span>\n" +
     "  </footer>\n" +
     "</div>");
 }]);

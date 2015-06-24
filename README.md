@@ -1,9 +1,11 @@
 # smokestack.io
 
-## About
+Behold, the source for my resume. It runs on a node.js backend just for kicks.
+Remove the js comments in the index and immediately it will harness the power of AngularJS + ui-router.
 
-### Grunt & Bower
-Grunt and Bower are responsible for fetching, building and concatenating
-all the project's front-end resources together.
-This keeps the project repository clean but sacrifices deployment speed
-and adds a layer of complexity.
+## Usage
+`grunt dev` for dev, watches all the important files that change
+`npm start` to run and remove all debug related things
+
+## Deployment
+Push to heroku or dokku, it will take care of the rest.
