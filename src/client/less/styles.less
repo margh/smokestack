@@ -4,11 +4,17 @@
 @alt-grey: #393d48;
 @highlight: #f2b11c;
 
+@font-face {
+  font-family: 'Superclarendon';
+  src: url('/fonts/superclarendon');
+}
+
 body {
   margin: 0;
   background: @bg-grey;
   color: @font-grey;
   font-family: 'Superclarendon';
+  font-weight: lighter;
 }
 
 p, h5 {
@@ -25,6 +31,17 @@ a {
 }
 a:visited {
   color: @alt-grey;
+}
+
+hr {
+  margin: 0.1em;
+  border: 0;
+  border-bottom: 2px solid @font-grey;
+}
+
+hr.bottom {
+  border: 0;
+  border-bottom: 2px solid @alt-grey;
 }
 
 /*
@@ -88,4 +105,12 @@ a:visited {
 
 .item.project {
   margin-top: 0.5em;
+}
+
+.skill-lists {
+  display: flex;
+
+  .skill-column {
+    flex: 1 1 0%;
+  }
 }

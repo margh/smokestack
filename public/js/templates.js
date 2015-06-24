@@ -42,7 +42,7 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "      <i class=\"fa fa-mobile\"></i>\n" +
     "      <span>0433 034 004</span>\n" +
     "    </a>\n" +
-    "    <a href=\"https://twitter.com/nrashleighs\">\n" +
+    "    <a href=\"https://twitter.com/nrashleigh\">\n" +
     "      <i class=\"fa fa-twitter\"></i>\n" +
     "      <span>Twitter</span>\n" +
     "    </a>\n" +
@@ -54,7 +54,11 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "\n" +
     "  <main class='main'>\n" +
     "    <div id=\"about\">\n" +
-    "      <h2>About Me</h2>\n" +
+    "      <h2>\n" +
+    "        <hr>\n" +
+    "        About\n" +
+    "        <hr class=\"bottom\">\n" +
+    "      </h2>\n" +
     "      <div>\n" +
     "        Hi, I'm Nathan Rashleigh, a developer originally from Brisbane but recently moved to Melbourne.\n" +
     "        I've been involved in Node.js more or less since its inception have an interest in cryptography and game development.\n" +
@@ -62,38 +66,51 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "    </div>\n" +
     "\n" +
     "    <div id=\"skills\">\n" +
-    "      <h2>Skills</h2>\n" +
-    "      <div>\n" +
-    "        <h4>Programming Languages:</h4>\n" +
-    "        <h5>Primary:</h5>\n" +
-    "        <ul>\n" +
-    "          <li>Node.js</li>\n" +
-    "          <li>Coffee-Script / Javascript</li>\n" +
-    "          <li>AngularJS</li>\n" +
-    "          <li>HTML5</li>\n" +
-    "          <li>Stylus / Less / CSS</li>\n" +
-    "        </ul>\n" +
-    "        <h5>Experience with:</h5>\n" +
-    "        <ul>\n" +
-    "          <li>Python</li>\n" +
-    "          <li>C#</li>\n" +
-    "          <li>C/C++</li>\n" +
-    "          <li>SQL</li>\n" +
-    "          <li>Scheme</li>\n" +
-    "          <li>LATEX</li>\n" +
-    "        </ul>\n" +
-    "        <h5>Technology:</h5>\n" +
-    "        <ul>\n" +
-    "          <li>Docker / Dokku / Heroku</li>\n" +
-    "          <li>SQL</li>\n" +
-    "          <li>MongoDB</li>\n" +
-    "          <li>Debian / Ubuntu</li>\n" +
-    "        </ul>\n" +
+    "      <h2>\n" +
+    "        <hr>\n" +
+    "        Skills\n" +
+    "        <hr class=\"bottom\">\n" +
+    "      </h2>\n" +
+    "      <div class=\"skill-lists\">\n" +
+    "        <div class=\"skill-column\">\n" +
+    "          <h5>Primary Languages:</h5>\n" +
+    "          <ul>\n" +
+    "            <li>Node.js</li>\n" +
+    "            <li>Coffee-Script / Javascript</li>\n" +
+    "            <li>AngularJS</li>\n" +
+    "            <li>HTML5</li>\n" +
+    "            <li>Stylus / Less / CSS</li>\n" +
+    "          </ul>\n" +
+    "        </div>\n" +
+    "        <div class=\"skill-column\">\n" +
+    "          <h5>Experience with:</h5>\n" +
+    "          <ul>\n" +
+    "            <li>Python</li>\n" +
+    "            <li>C#</li>\n" +
+    "            <li>C/C++</li>\n" +
+    "            <li>SQL</li>\n" +
+    "            <li>Scheme</li>\n" +
+    "            <li>LATEX</li>\n" +
+    "          </ul>\n" +
+    "        </div>\n" +
+    "        <div class=\"skill-column\">\n" +
+    "          <h5>Technology:</h5>\n" +
+    "          <ul>\n" +
+    "            <li>Docker / Dokku / Heroku</li>\n" +
+    "            <li>SQL</li>\n" +
+    "            <li>MongoDB</li>\n" +
+    "            <li>Debian / Ubuntu</li>\n" +
+    "          </ul>\n" +
+    "        </div>\n" +
     "      </div>\n" +
     "    </div>\n" +
     "\n" +
     "    <div id=\"employment\">\n" +
-    "      <h2>Employment</h2>\n" +
+    "      <h2>\n" +
+    "        <hr>\n" +
+    "        Employment\n" +
+    "        <hr class=\"bottom\">\n" +
+    "      </h2>\n" +
     "\n" +
     "      <div class=\"item\">\n" +
     "        <div class='title'>Merge Gaming / Codeworx</div>\n" +
@@ -109,7 +126,7 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "            <li>Coffeescript</li>\n" +
     "            <li>Browserify</li>\n" +
     "            <li>Evented XML parser for legacy system feed</li>\n" +
-    "            <li>HTML5 including Audio, appcache and a custom MVC framwork</li>\n" +
+    "            <li>HTML5 including Audio, appcache and a custom MVC framework</li>\n" +
     "          </ul>\n" +
     "        </div>\n" +
     "      </div>\n" +
@@ -132,7 +149,11 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "    </div>\n" +
     "\n" +
     "    <div id=\"projects\">\n" +
-    "      <h2>Projects</h2>\n" +
+    "      <h2>\n" +
+    "        <hr>\n" +
+    "        Projects\n" +
+    "        <hr class=\"bottom\">\n" +
+    "      </h2>\n" +
     "\n" +
     "      <div class=\"item project\">\n" +
     "        <div class='detail'>\n" +
@@ -162,7 +183,7 @@ angular.module("templates/main", []).run(["$templateCache", function($templateCa
     "  </main>\n" +
     "\n" +
     "  <footer class='footer'>\n" +
-    "    <span>Made with Flexbox <3</span>\n" +
+    "    <span>References available on request</span>\n" +
     "  </footer>\n" +
     "</div>");
 }]);

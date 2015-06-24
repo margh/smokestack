@@ -142,11 +142,12 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'build:dist', [
     'clean:all'
+    'bower_concat'
     'build:js'
-    'clean:dist'
     'less:app'
     'build:css'
     'copy:fonts'
+    'clean:dist'
   ]
 
   grunt.registerTask 'dev', ['build:dev', 'server:dev', 'watch']
