@@ -11,7 +11,15 @@ body {
   font-family: 'Superclarendon';
 }
 
-a{
+p, h5 {
+  margin: 0;
+}
+
+ul {
+  margin-left: -2.5em;
+}
+
+a {
   color: @font-grey;
   text-decoration: none;
 }
@@ -49,7 +57,7 @@ a:visited {
 }
 
 .main {
-  padding-top: 2em;
+  padding-top: 1em;
   order: 3;
   flex: 1; // fill the space
 }
@@ -57,4 +65,27 @@ a:visited {
 .footer {
   order: 4;
   text-align: center;
+  margin-top: 0.5em;
+}
+
+.item {
+  .title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .detail {
+    font-style: italic;
+  }
+  .right {
+    float: right;
+    font-style: normal;
+    color: @alt-grey;
+  }
+  .description {
+    margin-top: 0.5em;
+  }
+}
+
+.item.project {
+  margin-top: 0.5em;
 }

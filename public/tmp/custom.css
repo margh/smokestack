@@ -4,6 +4,13 @@ body {
   color: #2a2e35;
   font-family: 'Superclarendon';
 }
+p,
+h5 {
+  margin: 0;
+}
+ul {
+  margin-left: -2.5em;
+}
 a {
   color: #2a2e35;
   text-decoration: none;
@@ -35,11 +42,30 @@ a:visited {
   padding-right: 0.1em;
 }
 .main {
-  padding-top: 2em;
+  padding-top: 1em;
   order: 3;
   flex: 1;
 }
 .footer {
   order: 4;
   text-align: center;
+  margin-top: 0.5em;
+}
+.item .title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.item .detail {
+  font-style: italic;
+}
+.item .right {
+  float: right;
+  font-style: normal;
+  color: #393d48;
+}
+.item .description {
+  margin-top: 0.5em;
+}
+.item.project {
+  margin-top: 0.5em;
 }

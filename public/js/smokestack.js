@@ -6,10 +6,10 @@ app = angular.module('nathan', ['templates-app', 'ui.router']);
 
 app.config([
   '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('home');
+    $urlRouterProvider.otherwise('');
     return $stateProvider.state('home', {
       url: '',
-      title: 'Smokestack',
+      title: 'Smokestack - Nathan Rashleigh',
       templateUrl: 'templates/main'
     }).state('home.about', {
       url: '/about',

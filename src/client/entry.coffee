@@ -6,16 +6,15 @@ app = angular.module 'nathan', [
 app.config ['$stateProvider', '$urlRouterProvider',
   ($stateProvider, $urlRouterProvider) ->
 
-    $urlRouterProvider.otherwise 'home'
+    $urlRouterProvider.otherwise ''
 
     # Routing
     $stateProvider
       .state 'home',
         url: ''
-        title: 'Smokestack'
+        title: 'Smokestack - Nathan Rashleigh'
         templateUrl: 'templates/main'
 
-      # you need to route directly to this state because the above states are abstract
       .state 'home.about',
         url: '/about'
         title: 'Smokestack - About Me'
