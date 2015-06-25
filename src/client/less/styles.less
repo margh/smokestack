@@ -1,8 +1,19 @@
-// Squares
+// Colours
 @font-grey: #2a2e35;
 @bg-grey: #ccc;
 @alt-grey: #393d48;
 @highlight: #f2b11c;
+
+// Semantic's breakpoints
+@mobileBreakpoint            : 320px;
+@tabletBreakpoint            : 768px;
+@computerBreakpoint          : 992px;
+@largeMonitorBreakpoint      : 1400px;
+@widescreenMonitorBreakpoint : 1920px;
+
+@largestMobileScreen : (@tabletBreakpoint - 1px);
+@largestTabletScreen : (@computerBreakpoint - 1px);
+@largestLargeMonitor : (@widescreenMonitorBreakpoint - 1px);
 
 body {
   margin: 0;
@@ -47,6 +58,17 @@ hr.bottom {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+// small gutters on mobiles / tablets + small lists
+@media only screen and (max-width: (@largestTabletScreen)) {
+  #resume {
+    margin: 0 2em;
+  }
+
+  ul {
+    font-size: 0.8em;
+  }
 }
 
 .header {
