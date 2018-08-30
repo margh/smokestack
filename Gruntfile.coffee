@@ -51,7 +51,7 @@ module.exports = (grunt) ->
     less:
       app:
         files:
-          'public/tmp/custom.css': 'src/client/less/styles.less'
+          'public/tmp/custom.css': 'src/server/styles/styles.less'
 
     # Compiles all custom and dep styles into one css file
     cssmin:

@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "author": "Nathan Rashleigh",
   "contributors": [
-    "Nathan Rashleigh <nrashleigh@smokestack.io>"
+    "Nathan Rashleigh <ntr@smokestack.io>"
   ],
   "keywords": [
     "margh",
@@ -21,6 +21,7 @@
     "coffee-script": "^1.7.0",
     "coffeeify": "~0.6.0",
     "express": "^3.0.0",
+    "grunt": "^1.0.3",
     "grunt-bower-concat": "~0.2.4",
     "grunt-browserify": "~2.1.1",
     "grunt-cli": "~0.1.13",
